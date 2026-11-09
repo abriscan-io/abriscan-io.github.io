@@ -1,0 +1,168 @@
+{
+  "settings": {
+    "name": "abriscan-io",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/arbiscan-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://abriscan-io.github.io/sitemap.xml/\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://abriscan-io.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "h3dzuf6bg3",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "ArbiScan: Arbitrum (ARB) Explorer",
+        "meta_descr": "Arbiscan is a blockchain explorer designed for the Arbitrum network. It enables users to search for transactions, monitor wallet addresses, examine smart contracts, explore token information.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://arbiscan.io/\"><img src=\"@PROJECT_PATH@/assets/images/arbiscan.p1.png\" alt=\"arbiscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vAtWZCACfw",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://arbiscan.io/\"><img src=\"@PROJECT_PATH@/assets/images/arbiscan.p2.png\" alt=\"arbiscan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vAtWZSZeqD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-1"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://arbiscan.io/\" class=\"text-primary\">ArbiScan</a>: Arbitrum(ARB) Explorer</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Blockchain technology has transformed the way people interact with digital assets, decentralized finance (DeFi), and online financial systems. As blockchain networks continue to develop, the need for transparent and accessible tools to monitor transactions and explore blockchain activity has become increasingly important.\n<br>\n<br>One platform that plays an important role in this ecosystem is Arbiscan.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>is a blockchain explorer designed for the Arbitrum network. It enables users to search for transactions, monitor wallet addresses, examine smart contracts, explore token information, and analyze blockchain activity through a simple interface.\n<br>\n<br>Whether you are a cryptocurrency investor, blockchain developer, researcher, or beginner exploring decentralized applications, Arbiscan provides valuable insights into the activities taking place on the Arbitrum blockchain.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is Arbiscan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>is a blockchain explorer for Arbitrum One, developed and operated by the team behind Etherscan.\n<br>\n<br>A blockchain explorer is essentially a search engine for blockchain information. It indexes publicly available blockchain records and makes them accessible through searchable web pages.\n<br>\n<br>Through Arbiscan, users can explore different types of blockchain data, including:\n<br>\n<br>Transaction histories.\n<br>Wallet addresses and account balances.\n<br>Blocks and transaction confirmations.\n<br>ERC-20 tokens.\n<br>NFT transactions.\n<br>Smart contract information.\n<br>Network activity and gas fees.\n<br>Arbiscan helps improve transparency by allowing anyone to independently examine publicly recorded transactions on Arbitrum One.\n<br>\n<br>It is important to understand that Arbiscan is not a cryptocurrency wallet or exchange. It does not store private keys, manage user funds, or control transactions.\n<br>\n<br>Official website: https://arbiscan.io/</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding the Arbitrum Network</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">To understand <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a>, it is helpful to understand the blockchain network it explores.\n<br>\n<br><entity value=\"Arbitrum\" category=\"software\" disambig=\"Ethereum layer-2 blockchain ecosystem\"> is a Layer 2 scaling solution designed to improve Ethereum's transaction efficiency.\n<br>\n<br>Ethereum is widely used for decentralized applications, smart contracts, and cryptocurrency transactions. However, network congestion and transaction costs can create challenges for users.\n<br>\n<br>Arbitrum addresses these challenges through optimistic rollup technology, processing transactions on Layer 2 while relying on Ethereum for important security and settlement functions.\n<br>\n<br>Arbitrum One is one of the major networks in this ecosystem.\n<br>\n<br>Arbiscan makes information from Arbitrum One accessible by organizing blockchain records into searchable transaction, address, block, token, and contract pages.</entity></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a>\n</b><div><b>1. Transaction Tracking</b></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of the most useful features of <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>is its transaction tracking functionality.\n<br>\n<br>Every transaction on Arbitrum One has a unique transaction hash that users can enter into the Arbiscan search bar.\n<br>\n<br>After searching, users can access information such as:\n<br>\n<br>Transaction hash.\n<br>Transaction status.\n<br>Sender and recipient addresses.\n<br>Transaction value.\n<br>Gas fees.\n<br>Block number.\n<br>Transaction timestamp.\n<br>Execution details.\n<br>This feature is particularly useful when someone sends cryptocurrency and wants to confirm whether the transaction has been successfully processed.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>2. Wallet Address Tracking</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>allows users to investigate publicly available information associated with blockchain wallet addresses.\n<br>\n<br>By entering an address, users can examine its transaction history, balance information, token holdings, and other available blockchain activities.\n<br>\n<br>This functionality can help cryptocurrency users monitor their own wallets and investigate transactions involving other public addresses.\n<br>\n<br>However, wallet addresses do not automatically disclose the real-world identities of their owners.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>3. Block Exploration</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Blockchain networks organize transactions into blocks.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>provides access to individual blocks and displays information that helps users understand how transactions are recorded on the network.\n<br>\n<br>Depending on the block, available information can include:\n<br>\n<br>Block number.\n<br>Timestamp.\n<br>Transaction count.\n<br>Block-related gas information.\n<br>Sequencer-related information.\n<br>Associated transaction records.\n<br>Block exploration is particularly valuable for developers, blockchain researchers, and individuals interested in understanding how distributed networks operate.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>4. Smart Contract Verification</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Smart contracts are an essential component of decentralized applications.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>provides tools for examining and verifying smart contracts deployed on Arbitrum One.\n<br>\n<br>Contract verification allows developers to publish the source code corresponding to a deployed contract's bytecode.\n<br>\n<br>Once verified, users can inspect the contract code and, where supported, interact with its functions through the explorer.\n<br>\n<br>This improves transparency and makes it easier for users and developers to investigate how decentralized applications operate.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>5. Token Tracking</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>provides token-related information that helps users explore digital assets operating on Arbitrum One.\n<br>\n<br>Users can examine supported token contracts and access information such as:\n<br>\n<br>Token names and symbols.\n<br>Contract addresses.\n<br>Token supply information.\n<br>Holder information.\n<br>Transfer histories.\n<br>Token transaction records.\n<br>These features are useful for investigating token activity and understanding how digital assets move between blockchain addresses.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>6. Gas Fee Tracking</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Gas fees represent the costs associated with executing transactions and operations on a blockchain.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>includes gas-related information that helps users understand transaction costs on Arbitrum One.\n<br>\n<br>Users can examine gas prices, transaction fees, and other available network information.\n<br>\n<br>Monitoring gas fees can help users make better decisions about when to interact with decentralized applications.\n<br>\n<br>However, actual transaction costs depend on network conditions and the computational requirements of the transaction.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>7. NFT Exploration</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Non-fungible tokens (NFTs) are digital assets that represent unique items or ownership records.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>supports the exploration of NFT-related blockchain activity, including ERC-721 and ERC-1155 token transfers.\n<br>\n<br>Users can investigate NFT contract addresses, token identifiers, and transfer records.\n<br>\n<br>This functionality can be useful for collectors, developers, and researchers interested in NFT activity on Arbitrum One.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>8. <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>API</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>also provides API access for developers who want to integrate blockchain information into their applications.\n<br>\n<br>Through the Etherscan API infrastructure, developers can retrieve Arbitrum One blockchain information programmatically.\n<br>\n<br>Available API capabilities include:\n<br>\n<br>Account balances.\n<br>Normal transactions.\n<br>Internal transactions.\n<br>Token transfers.\n<br>Block information.\n<br>Smart contract information.\n<br>Event logs.\n<br>Gas information.\n<br>Transaction receipts.\n<br>The API is useful for building blockchain dashboards, wallet applications, financial monitoring systems, and decentralized applications.\n<br>\n<br>Developers should consult the current API documentation for supported endpoints, authentication requirements, and usage limits.\n<br>\n<br>API information: https://arbiscan.io/api</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Use <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Step 1: Visit the Official Website\n<br>Open https://arbiscan.io/ in your preferred web browser.\n<br>\n<br>Step 2: Enter Your Search Information\n<br>Locate the search bar on the homepage.\n<br>\n<br>You can enter a transaction hash, wallet address, block number, or smart contract address.\n<br>\n<br>Step 3: Review the Search Results\n<br>Arbiscan will display the corresponding blockchain information.\n<br>\n<br>For example, searching for a transaction hash will open a page containing its transaction details.\n<br>\n<br>Step 4: Examine Transaction Information\n<br>Review the sender, recipient, transaction value, status, block number, and associated fees.\n<br>\n<br>Step 5: Explore Additional Information\n<br>You can continue investigating related wallet addresses, token transfers, smart contracts, and other blockchain records.\n<br>\n<br>This makes Arbiscan a useful tool for following cryptocurrency transactions and understanding blockchain activity.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Transparency: It provides access to publicly recorded transactions and blockchain information.\n<br>\n<br>Convenience: Users can investigate addresses, transactions, tokens, and smart contracts from one platform.\n<br>\n<br>Developer-Friendly Tools: Its API makes it easier to integrate blockchain information into external applications.\n<br>\n<br>Smart Contract Visibility: Verified contract source code helps users and developers understand deployed applications.\n<br>\n<br>Transaction Verification: Users can independently examine transaction status and confirmation information.\n<br>\n<br>Research Capabilities: Blockchain data can be used to study wallet activity, token movements, and network trends.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Who Should Use <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a>?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Cryptocurrency investors: To monitor transactions and investigate token activity.\n<br>Blockchain developers: To examine smart contracts, transaction logs, and network information.\n<br>DeFi users: To verify transactions involving decentralized exchanges, lending protocols, and other applications.\n<br>Researchers: To analyze publicly available blockchain records.\n<br>NFT collectors: To investigate NFT contracts and transfer histories.\n<br>Cryptocurrency beginners: To learn how transactions and blockchain records work.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Limitations of <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Although <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>is a valuable blockchain exploration tool, it has certain limitations.\n<br>\n<br>First, it does not function as a cryptocurrency wallet. Users cannot use it to store private keys or directly manage their digital assets.\n<br>\n<br>Second, it cannot reverse cryptocurrency transactions. Once a transaction has been successfully processed on the blockchain, Arbiscan cannot undo it.\n<br>\n<br>Third, blockchain information can sometimes be difficult for beginners to interpret. Understanding transaction execution, gas fees, contract interactions, and token standards may require additional technical knowledge.\n<br>\n<br>Finally, users should be careful when interacting with smart contracts. A verified contract does not automatically mean that the project is trustworthy or free from security vulnerabilities.\n<br>\n<br>It is always advisable to verify contract addresses through reliable official sources before interacting with decentralized applications.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of <a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>in the Future of Blockchain Technology</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As Layer 2 blockchain networks become increasingly important to the cryptocurrency industry, tools that improve transparency and accessibility will continue to play an essential role.\n<br>\n<br><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>contributes to this development by making Arbitrum One blockchain information easier to access and understand.\n<br>\n<br>Its transaction tracking capabilities, smart contract exploration tools, token information, and API services support the development of a more transparent blockchain ecosystem.\n<br>\n<br>For developers, it provides access to valuable data needed to build decentralized applications. For ordinary cryptocurrency users, it offers a convenient way to verify transactions and investigate digital asset movements.\n<br>\n<br>As blockchain adoption expands, blockchain explorers such as Arbiscan will remain important resources for understanding decentralized financial systems.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://arbiscan.io/\" class=\"text-primary\">Arbiscan </a>is an important blockchain exploration platform that provides users with access to publicly available information on the Arbitrum One network.\n<br>\n<br>Its features include transaction tracking, wallet address exploration, block information, smart contract verification, token tracking, NFT exploration, and API integration.\n<br>\n<br>Whether you are a cryptocurrency investor, developer, researcher, or beginner, Arbiscan offers useful tools for exploring and understanding blockchain activity.\n<br>\n<br>Although it does not provide wallet management or transaction reversal services, its transparency and data accessibility make it a valuable resource within the Arbitrum ecosystem.\n<br>\n<br>Explore Arbiscan today: https://arbiscan.io/\n<br>\n<br>By making blockchain information easier to search, verify, and analyze, Arbiscan helps bring greater transparency to the growing world of decentralized technology.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vAtX0Vf6ES",
+          "_anchor": "article07-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
